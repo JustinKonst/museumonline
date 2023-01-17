@@ -1,0 +1,184 @@
+*{
+    padding: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+header{
+    width: 100vw;
+    height: 80px;
+    background-color: rgb(243, 195, 203)
+}
+nav{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+ul{
+    list-style: none;
+}
+.selectLangNav{
+    width: 200px;
+    display: flex;
+    position: absolute;
+    right: 40px;
+    font-size: 40px;
+    list-style: none;
+    border-radius: 20px;
+}
+.logoNav{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    margin: 0 auto; 
+}
+.logo{
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    left: 45%;
+    top: 5%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    display: flex;
+}
+.leftNav{
+    width: 200px;
+    height: 30px;
+    display: flex;
+    left: 40px;
+    font-size: 20px;
+    justify-content: space-evenly;
+    gap: 30px;
+    list-style: none;
+    margin-left: 80px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+section{
+    padding: 40px;
+}
+.banner{
+    background-color: rgb(243, 195, 203);
+    width: 100%;
+    height: 93vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h1{
+    font-size: 80px;
+}
+.bannerText{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    font-size: 80px;
+}
+.infoBtn{
+    height: 100px;
+    width: 60vw;
+    display: flex;
+    margin-top: 600px;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 20px;
+}
+.infoBtn:hover{
+
+    background-color: black;
+}
+.bannerBtn{
+    color: black;
+    font-size: 50px;
+    line-height: 100px;
+    font-style: oblique;
+}
+.bannerBtn:hover{
+    color: white;
+}
+.info{
+    background-color: rgb(43, 43, 43);
+    width: 100vw;
+    height: 1000px;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+
+}
+.textLeft{
+    display: flex;
+    width: 40%;
+    height: 60%;
+    background-color: rgb(230, 230, 230) 
+}
+.textRight{
+    display: flex;
+    width: 40%;
+    height: 60%;
+    background-color: rgb(230, 230, 230) 
+}
+article > section >p{
+    color: black;
+    font-size: 25px;
+    margin-top: 20px;
+}
+.game{
+    background-color: rgb(196, 149, 149);   
+    width: 100vw;
+    height: 800px;
+    padding: 40px;
+}
+.lastSection{
+    background-color: rgb(206, 206, 206);   
+    width: 100vw;
+    height: 600px;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.reviews{
+    display: flex;
+    width: 40%;
+    height: 60%;
+    background-color: rgb(65, 65, 65);
+}
+.openingHours{
+    display: flex;
+    width: 40%;
+    height: 60%;
+    background-color: rgb(65, 65, 65);
+    border: 10px;
+}
+
+footer{
+    width: 100vw;
+    height: 200px;
+    background-color: rgb(68, 68, 68);
+    display: flex;
+}
+footer > section{
+    display: flex;
+}
+
+footer > section > h4{
+    color: white;
+}
