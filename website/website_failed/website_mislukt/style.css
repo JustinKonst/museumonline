@@ -2,13 +2,12 @@
     padding: 0;
     margin: 0 auto;
     box-sizing: border-box;
-    scroll-behavior:smooth
-
+    scroll-behavior:smooth;
 }
 header{
     width: 100vw;
     height: 80px;
-    background-color: #FFB5BB;
+    background-color: rgb(27, 27, 65);
 }
 nav{
     width: 100%;
@@ -47,8 +46,14 @@ ul{
     border-radius: 50%;
     display: flex;
 }
-.logo:hover{
-    color: #FD7094;
+.logo > img{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.logo > a:hover{
+    background-color: rgb(27, 27, 65);
     transition: 1s;
 }
 .leftNav{
@@ -62,15 +67,15 @@ ul{
     list-style: none;
     margin-left: 80px;
 }
-
+.selectLangNav > li > a:hover, .leftNav > li > a:hover, .bannerBtn:hover{
+        color: rgb(27, 27, 65);
+        transition: 1s;
+}
 a{
     color: white;
     text-decoration: none;
 }
-a:hover{
-    color: #FD7094;
-    transition: 1s;
-}
+
 
 body{
     font-family: 'Open Sans', sans-serif;
@@ -79,20 +84,21 @@ section{
     padding: 40px;
 }
 .banner{
-    background-color:  #FFB5BB;
+    background-color:  rgb(27, 27, 65);
     width: 100%;
     height: 93vh;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background-image: linear-gradient(to bottom,transparent,rgb(9, 9, 37));
 }
 
 h1{
     font-size: 80px;
 }
 .bannerText{
-    color: white;
+    color: rgb(255, 255, 255);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -108,15 +114,15 @@ h1{
     margin-top: 600px;
     align-items: center;
     justify-content: center;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     border-radius: 20px;
 }
 .infoBtn:hover{
-    background-color: #FFA6AF;
+    background-color: rgb(9, 9, 37);
     transition: 1s;
 }
 .bannerBtn{
-    color: #FFA6AF;
+    color: rgb(9, 9, 37);
     font-size: 50px;
     line-height: 100px;
     
@@ -125,23 +131,24 @@ h1{
     color: white;
 }
 .info{
-    background-color: #FEEEEC;
+    background-color: rgb(9, 34, 70);
     width: 100vw;
     height: 1000px;
     padding: 40px;
     display: flex;
     align-items: center;
     border-top: 8px solid rgb(255, 255, 255);
-    border-bottom: 8px solid rgb(255, 255, 255);
 }
 .textLeft{
     display: flex;
     width: 40%;
     height: 65%;
+    background-color: rgb(9, 9, 37);
     flex-direction: column;
     border-radius: 20px;
+    word-break: keep-all;
     border: 6px solid white;
-    background-image: linear-gradient(to bottom,transparent,#FFA6AF)
+    background-image: linear-gradient(to bottom,transparent,rgb(19, 60, 94))
 }
 
 .textLeft > h2{
@@ -155,12 +162,12 @@ h1{
     display: flex;
     width: 40%;
     height: 65%;
-    background-color: rgb(250, 212, 218);
+    background-color: rgb(9, 9, 37);
     flex-direction: column;
     border-radius: 20px;
-    word-break: break-all;
+    word-break: keep-all;
     border: 6px solid white;
-    background-image: linear-gradient(to bottom,transparent,#FFA6AF)
+    background-image: linear-gradient(to bottom,transparent,rgb(19, 60, 94))
 }
 
 .textRight > h2{
@@ -173,13 +180,52 @@ article > section >p{
     font-size: 25px;
     margin-top: 20px;
     flex-shrink: 1;
-    word-wrap: break-word;
+}
+.infoImages{
+    background-color: rgb(9, 34, 70);
+    width: 100vw;
+    width: 100vw;
+    height: 600px;
+    display: flex;
+    border-bottom: 8px solid rgb(255, 255, 255);
+    margin-top: -100px;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 130px;
+    padding-right: 130px;
+}
+section.infoImages > ul{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.infoImages > ul >li{
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.infoImages > ul> li > img{
+    object-fit: cover;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border: 6px solid white;
+    border-radius: 20px;
+    flex-wrap: wrap;
 }
 .game{
-    background-color: #FD7094;   
+    background-color: rgb(3, 3, 24);   
     width: 100vw;
     height: 800px;
     padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.game > h2{
+    font-size: 100px;
+    color: white;
 }
 .lastSection{
     width: 100vw;
@@ -188,11 +234,18 @@ article > section >p{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #fdcfd4;
+    background-color: #000031;
     border-top: 10px solid rgb(255, 255, 255);
     border-bottom: 10px solid rgb(255, 255, 255);
     background-image: linear-gradient(to bottom,transparent,#FFB5BB,);
 
+}
+.lastSection > h2{
+    display: flex;
+    position: absolute;
+    bottom: -2480px;
+    font-size: 100px;
+    color: white;
 }
 .reviews{
     display: flex;
@@ -211,12 +264,34 @@ article > section >p{
 .reviews > img{
     display: flex;
     width: 100%;
-    height: 90%;
+    height: 100%;
     object-fit: cover;
     flex-direction: column;
+    border-radius: 20px;
+    opacity: 85%;
+}
+.reviews > p{
+    position: relative;
+    top: -110px;
+    font-size: 40px;
+    color: white;
+    background-color: rgba(24, 59, 153, 0.4);
+    width: 100%;
+    text-align: center;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    opacity: 90%;
+}
+
+.reviews2 > p{
+    position: relative;
+    top: -110px;
+    font-size: 40px;
+    color: white;
+    background-color: rgba(24, 59, 153, 0.4);
+    width: 100%;
+    text-align: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 .reviews2{
@@ -236,12 +311,23 @@ article > section >p{
 .reviews2 > img{
     display: flex;
     width: 100%;
-    height: 90%;
+    height: 100%;
     object-fit: cover;
     flex-direction: column;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    opacity: 90%;
+    border-radius: 20px;
+    opacity: 85%;
+}
+.reviews >.reviewStars{
+    position: relative;
+    width: 100%;
+    top: -210px;
+    display: flex;
+}
+.reviews2 >.reviewStars{
+    position: relative;
+    width: 100%;
+    top: -210px;
+    display: flex;
 }
 .openingHours{
     width: 100vw;
@@ -251,7 +337,10 @@ article > section >p{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-image: linear-gradient(to bottom,transparent,#FFB5BB);
+    background-image: linear-gradient(to bottom,transparent,rgb(9, 9, 37));
+    background-image: url(/website_mislukt/img/vgm2.jpg);
+    background-size: 100% 100vw;
+    background-repeat: no-repeat;
 }
 .openingHours > h2{
     color: white;
@@ -268,31 +357,53 @@ article > section >p{
     color: white;
     
 }
+.day, .time{
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+}
 .box{
     display: flex;
     width: 50%;
     height: 70%;
-    background-color: rgb(179, 179, 179);
+    background-color: (9, 34, 70);
     border-radius: 50px;
     border: 6px solid rgb(255, 255, 255);
     align-items: center;
     justify-content: center;
     margin-bottom: 80px;
-    background-image: linear-gradient(to bottom,#FEEEEC, #FE7F9B)
+    background-image: linear-gradient(to bottom,transparent,rgb(9, 9, 37));
 }
 
 
 footer{
     width: 100vw;
     height: 200px;
-    background-color: #FD7094;
+    background-color: rgb(9, 9, 37);
     display: flex;
     border-top: 10px solid white;
 }
 footer > section{
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
 }
 
 footer > section > h4{
+    display: flex;
     color: white;
+    border-bottom: 3px solid white;
+
+}
+
+footer > section > ul > li{
+    color: white;
+}
+footer > section > ul > li> a:hover{
+    color: #fd2d5a;
+    transition: 0.3s;
+}
+.clear{
+    color: transparent;
 }
