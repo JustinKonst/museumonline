@@ -2,11 +2,13 @@
     padding: 0;
     margin: 0 auto;
     box-sizing: border-box;
+    scroll-behavior:smooth
+
 }
 header{
     width: 100vw;
     height: 80px;
-    background-color: rgb(243, 195, 203)
+    background-color: #FFB5BB;
 }
 nav{
     width: 100%;
@@ -45,6 +47,10 @@ ul{
     border-radius: 50%;
     display: flex;
 }
+.logo:hover{
+    color: #FD7094;
+    transition: 1s;
+}
 .leftNav{
     width: 200px;
     height: 30px;
@@ -62,7 +68,8 @@ a{
     text-decoration: none;
 }
 a:hover{
-    color: black
+    color: #FD7094;
+    transition: 1s;
 }
 
 body{
@@ -72,7 +79,7 @@ section{
     padding: 40px;
 }
 .banner{
-    background-color: rgb(243, 195, 203);
+    background-color:  #FFB5BB;
     width: 100%;
     height: 93vh;
     display: flex;
@@ -105,49 +112,60 @@ h1{
     border-radius: 20px;
 }
 .infoBtn:hover{
-
-    background-color: black;
+    background-color: #FFA6AF;
+    transition: 1s;
 }
 .bannerBtn{
-    color: black;
+    color: #FFA6AF;
     font-size: 50px;
     line-height: 100px;
+    
 }
 .bannerBtn:hover{
     color: white;
 }
 .info{
-    background-color: rgb(43, 43, 43);
+    background-color: #FEEEEC;
     width: 100vw;
     height: 1000px;
     padding: 40px;
     display: flex;
     align-items: center;
-
+    border-top: 8px solid rgb(255, 255, 255);
+    border-bottom: 8px solid rgb(255, 255, 255);
 }
 .textLeft{
     display: flex;
     width: 40%;
     height: 65%;
-    background-color: rgb(230, 230, 230);
     flex-direction: column;
     border-radius: 20px;
+    border: 6px solid white;
+    background-image: linear-gradient(to bottom,transparent,#FFA6AF)
 }
 
 .textLeft > h2{
     font-size: 40px;
+    color: white;
+}
+.textHistory, .textAct{
+    color: white;
 }
 .textRight{
     display: flex;
     width: 40%;
     height: 65%;
-    background-color: rgb(230, 230, 230);
+    background-color: rgb(250, 212, 218);
     flex-direction: column;
     border-radius: 20px;
+    word-break: break-all;
+    border: 6px solid white;
+    background-image: linear-gradient(to bottom,transparent,#FFA6AF)
 }
 
 .textRight > h2{
     font-size: 32px;
+    color: white;
 }
 
 article > section >p{
@@ -155,73 +173,121 @@ article > section >p{
     font-size: 25px;
     margin-top: 20px;
     flex-shrink: 1;
+    word-wrap: break-word;
 }
 .game{
-    background-color: rgb(196, 149, 149);   
+    background-color: #FD7094;   
     width: 100vw;
     height: 800px;
     padding: 40px;
 }
 .lastSection{
-    background-color: white;
     width: 100vw;
     height: 800px;
     padding: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #fdcfd4;
+    border-top: 10px solid rgb(255, 255, 255);
+    border-bottom: 10px solid rgb(255, 255, 255);
+    background-image: linear-gradient(to bottom,transparent,#FFB5BB,);
+
 }
 .reviews{
     display: flex;
     width: 40%;
     height: 60%;
-    background-color: rgb(65, 65, 65);
+    background-color: #FFA6AF;
     flex-direction: column;
     padding: 0px;
     border-radius: 20px;
+    border: 6px solid white;
 }
 .reviews > h2{
     color: white;
+    height: 10%;
 }
 .reviews > img{
     display: flex;
     width: 100%;
-    height: 100%;
+    height: 90%;
     object-fit: cover;
     flex-direction: column;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
+    opacity: 90%;
 }
 
 .reviews2{
     display: flex;
     width: 40%;
     height: 60%;
-    background-color: rgb(65, 65, 65);
+    background-color: #FFA6AF;
     flex-direction: column;
     padding: 0px;
     border-radius: 20px;
+    border: 6px solid white;
 }
 .reviews2 > h2{
     color: white;
+    height: 10%;
 }
 .reviews2 > img{
     display: flex;
     width: 100%;
-    height: 100%;
+    height: 90%;
     object-fit: cover;
     flex-direction: column;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
+    opacity: 90%;
 }
+.openingHours{
+    width: 100vw;
+    height: 600px;
+    background-color: #FEEEEC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: linear-gradient(to bottom,transparent,#FFB5BB);
+}
+.openingHours > h2{
+    color: white;
+    padding-bottom: 20px;
+    font-size: 40px;
 
+}
+.openingText{
+    display: flex;
+    position: relative;
+    left: 20px;
+    display: flex;
+    font-size: 30px;
+    color: white;
+    
+}
+.box{
+    display: flex;
+    width: 50%;
+    height: 70%;
+    background-color: rgb(179, 179, 179);
+    border-radius: 50px;
+    border: 6px solid rgb(255, 255, 255);
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 80px;
+    background-image: linear-gradient(to bottom,#FEEEEC, #FE7F9B)
+}
 
 
 footer{
     width: 100vw;
     height: 200px;
-    background-color: rgb(68, 68, 68);
+    background-color: #FD7094;
     display: flex;
+    border-top: 10px solid white;
 }
 footer > section{
     display: flex;
